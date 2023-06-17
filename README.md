@@ -1,6 +1,9 @@
+# Agora
+The Elysium Knowledge Repository or EKR is brought to you by Agora, we're an all-new open source multi-modal AI research organization devoted towards advancing Humanity.
+
+[Join us and help embed all of Humanity's knowledge into multi-modal embeddings and join the discord for support!](https://discord.gg/qUtxnK2NMf)
+
 # Elysium Knowledge Repository: Embedding the Wisdom of Humanity 🏛️
-
-
 
 Welcome to the **Elysium Knowledge Repository**! Utilizing the principles of the ancient Greeks, this advanced solution converts all of humanity's wisdom into multi-modal embeddings, preserved and stored in an efficient Parquet format.
 
