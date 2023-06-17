@@ -68,7 +68,7 @@ elysium.verify_embeddings()
 
 ## How it works ⚙️
 
-The Elysium Knowledge Repository works by reading your knowledge source file (such as a CSV file), converting the information into multi-modal embeddings using OpenAI's models, and storing these embeddings in a highly efficient Parquet format. It also provides capabilities to load and verify the generated embeddings, ensuring your wisdom is accurately preserved.
+The Elysium Knowledge Repository works by reading your knowledge source file (such as a CSV file), converting the information into multi-modal embeddings using [Pegasus](https://github.com/kyegomez/Pegasus) models, and storing these embeddings in a highly efficient Parquet format. It also provides capabilities to load and verify the generated embeddings, ensuring your wisdom is accurately preserved.
 
 ## Roadmap 🗺️
 
