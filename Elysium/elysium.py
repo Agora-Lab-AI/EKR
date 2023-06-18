@@ -11,12 +11,7 @@ import torch
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 from torchvision import transforms
 from ImageBind.models.multimodal_preprocessors import (
-    EncodedVideo, 
-    NormalizeVideo, 
-    ConstantClipsPerVideoSampler, 
-    pv_transforms, 
-    get_clip_timepoints, 
-    SpatialCrop
+    load_and_transform_video_data
 )
 import pandas as pd
 
@@ -59,60 +54,6 @@ class Elysium:
             sample_rate
         )
 
-    def load_and_transform_video_data(
-        self,
-        video_paths,
-        device,
-        clip_duration=2,
-        clips_per_video=5,
-        sample_rate=16000,
-    ):
-        if video_paths is None:
-            return None
-
-        video_outputs = []
-        video_transform = transforms.Compose(
-            [
-                pv_transforms.ShortSideScale(224),
-                NormalizeVideo(
-                    mean=(0.48145466, 0.4578275, 0.40821073),
-                    std=(0.26862954, 0.26130258, 0.27577711),
-                ),
-            ]
-        )
-
-        clip_sampler = ConstantClipsPerVideoSampler(
-            clip_duration=clip_duration, clips_per_video=clips_per_video
-        )
-        frame_sampler = pv_transforms.UniformTemporalSubsample(num_samples=clip_duration)
-
-        for video_path in video_paths:
-            video = EncodedVideo.from_path(
-                video_path,
-                decoder="decord",
-                decode_audio=False,
-                **{"sample_rate": sample_rate},
-            )
-
-            all_clips_timepoints = get_clip_timepoints(clip_sampler, video.duration)
-
-            all_video = []
-            for clip_timepoints in all_clips_timepoints:
-                clip = video.get_clip(clip_timepoints[0], clip_timepoints[1])
-                if clip is None:
-                    raise ValueError("No clip found")
-                video_clip = frame_sampler(clip["video"])
-                video_clip = video_clip / 255.0
-
-                all_video.append(video_clip)
-
-            all_video = [video_transform(clip) for clip in all_video]
-            all_video = SpatialCrop(224, num_crops=3)(all_video)
-
-            all_video = torch.stack(all_video, dim=0)
-            video_outputs.append(all_video)
-
-        return torch.stack(video_outputs, dim=0).to(device)
 
     def generate_embeddings(self):
         files = os.listdir(self.file_path)
