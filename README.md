@@ -29,30 +29,15 @@ You can start embedding humanity's wisdom by following the steps in the main Pyt
 ```python
 # Import the necessary Python packages
 import os
-import pandas as pd
-import pyarrow.parquet as pq
 from elysium import Elysium
 
-# Load your OpenAI API key
-dotenv.load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-# Specify your knowledge source file
-file_path = 'path_to_your_file'
-
-# Initialize the Elysium embedding object
-elysium = Elysium(file_path)
-
-# Generate the embeddings
+# Use case example
+directory_path = 'path_to_your_directory'
+file_type = 'audio'  # or 'image'
+elysium = Elysium(directory_path, file_type)
 elysium.generate_embeddings()
-
-# Save the embeddings to a Parquet file
 elysium.save_to_parquet()
-
-# Verify the generated embeddings
 elysium.verify_embeddings()
-
-# That's it! Your wisdom is now embedded and stored efficiently!
 ```
 
 ### Requirements
