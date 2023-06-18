@@ -15,17 +15,6 @@ Welcome to the **Elysium Knowledge Repository**! Utilizing the principles of the
 
 ## Getting Started 🌟
 
-### Requirements
-- Python 3.7 or higher
-- OpenAI API Key
-- NumPy
-- Pandas
-- PyArrow
-- Nomic
-- Tenacity
-- Dotenv
-- Concurrent
-
 ### Installation
 Install all necessary libraries with the following pip commands:
 
@@ -65,6 +54,18 @@ elysium.verify_embeddings()
 
 # That's it! Your wisdom is now embedded and stored efficiently!
 ```
+
+### Requirements
+- Python 3.7 or higher
+- OpenAI API Key
+- NumPy
+- Pandas
+- PyArrow
+- Nomic
+- Tenacity
+- Dotenv
+- Concurrent
+
 
 ## How it works ⚙️
 
