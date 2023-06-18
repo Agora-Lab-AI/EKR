@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'elysium-knowledge-repository',
   packages = find_packages(exclude=['examples']),
-  version = '0.0.1',
+  version = '0.0.2',
   license='APACHE',
   description = 'Elysium Knowledge Repository - Pytorch',
   author = 'Kye Gomez',
