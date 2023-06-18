@@ -5,6 +5,7 @@ import youtube_dl
 from pytube import YouTube
 from tempfile import TemporaryDirectory
 from typing import List 
+import pyarrow.parquet as pq
 from PIL import Image
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 from torchvision import transforms
