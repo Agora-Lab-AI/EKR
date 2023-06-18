@@ -114,3 +114,49 @@ Contributions are always welcome! If you have any improvements or additions, fee
 ## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Roadmap 
+
+[Please help us craft a list of data sources to embed, join the Agora discord!](https://discord.gg/qUtxnK2NMf)
+
+
+Multi-modal data sources provide rich context and enable diverse applications across several domains. Below are three data sources that could be embedded and open-sourced:
+
+1. **YouTube videos**: YouTube is a massive source of multi-modal data, including audio, video, and text (closed captioning or comments). Embedding and open-sourcing this data can create opportunities for research in fields like natural language processing, computer vision, sentiment analysis, recommendation systems, etc. Your work might gain attention if you build effective tools to deal with YouTube data, given the platform's popularity and scale. However, data usage is subject to YouTube's terms of service, which restricts downloading content without explicit permission.
+
+2. **Wikipedia**: The text data from Wikipedia articles along with the images, charts, and tables it contains can be used as a multi-modal dataset. This dataset can be helpful in fields like knowledge graph construction, semantic search engines, AI assistants, or even more general NLP tasks. Because Wikipedia is a go-to resource for various AI tasks, your contributions might stand out. It's worth mentioning that extracting, processing, and providing access to such a large-scale dataset requires significant computational resources.
+
+3. **Twitter data**: Twitter offers text, image, and sometimes video data, and it's frequently used for sentiment analysis, event detection, and studying social phenomena. Open-sourcing Twitter embeddings might bring recognition, especially if you can handle the diverse languages and the informal and abbreviated language used. Twitter's API usage policies and data privacy considerations are critical factors here.
+
+There are challenges and constraints associated with each data source. They include, but aren't limited to, the following:
+
+- **Data volume**: The sheer size of these datasets can pose significant challenges for downloading, storing, processing, and distributing the data.
+
+- **Privacy**: It's essential to respect user privacy and confidentiality. This is especially relevant for social media platforms like Twitter, where user-specific information can be sensitive.
+
+- **Terms of use**: Each platform will have its own terms and conditions for data usage. For example, both YouTube and Twitter have specific rules governing how their data can be accessed and used.
+
+- **Data heterogeneity**: Handling different data types (text, audio, video, images) may require different pre-processing and embedding strategies. This can make the project complex and computationally demanding.
+
+
++ Some  other potential data sources with potential challenges and obstacles:
+
+1. **Podcasts (e.g., Apple Podcasts, Spotify)**: These are rich sources of audio data and often come with accompanying transcripts. They can be used for various audio analysis tasks, voice recognition, or natural language understanding tasks. However, obtaining the data might be challenging due to the need to scrape or use APIs, and some platforms may not provide full transcripts.
+
+2. **TV News (e.g., CNN, BBC)**: These channels offer video, audio, and sometimes transcripts of their news programming. This can be used in many ways, including analyzing media bias or monitoring global events. However, access to this data might be restricted, and extraction can be complex due to the website structure or streaming formats used.
+
+3. **Online Courses (e.g., Coursera, Udemy)**: Online courses offer video, audio, text, and sometimes quizzes and other interactive content. This can be used to build AI that learns from instructional content or to analyze online learning. However, the courses often require payment, and scraping could violate terms of service.
+
+4. **E-Books (e.g., Project Gutenberg)**: E-books can offer text, and sometimes audio or images. This could be used for a variety of text analysis tasks. The challenge here might be dealing with different formats and ensuring that data is extracted correctly from each.
+
+5. **Audiobooks (e.g., LibriVox)**: This source is useful for a variety of audio processing tasks. It might be challenging to sync audio with the corresponding text, especially when there's a lack of exact transcripts.
+
+6. **Music Platforms (e.g., SoundCloud, Bandcamp)**: These platforms provide audio data and sometimes lyrics. They could be used for tasks like music recommendation or genre classification. Copyright issues may arise, and not all songs have accompanying lyrics.
+
+7. **Image Databases (e.g., Flickr, Instagram)**: These platforms offer images, often with accompanying text in the form of tags or descriptions. This can be used for tasks like image captioning or object recognition. The platforms may restrict API usage, and user privacy must be respected.
+
+8. **Medical Imaging Databases (e.g., The Cancer Imaging Archive)**: These databases offer medical images and related health data. They can be used for tasks like disease detection or health analytics. The primary challenges are privacy laws (like HIPAA in the United States) and the highly specialized knowledge required to use the data effectively.
+
+9. **Government Records (e.g., U.S. Census Bureau, European Union Open Data Portal)**: These sources offer a variety of data types, including text, numerical data, and sometimes images or audio. The challenge is that the data may come in many different formats and may require extensive cleaning and pre-processing.
+
+10. **Social Media Platforms (e.g., Facebook, Reddit)**: These platforms provide text, image, and sometimes video data. They can be used for sentiment analysis, event detection, and more. The obstacles include the platforms' API usage policies and privacy concerns.
