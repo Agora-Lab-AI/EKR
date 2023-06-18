@@ -40,17 +40,6 @@ elysium.save_to_parquet()
 elysium.verify_embeddings()
 ```
 
-### Requirements
-- Python 3.7 or higher
-- OpenAI API Key
-- NumPy
-- Pandas
-- PyArrow
-- Nomic
-- Tenacity
-- Dotenv
-- Concurrent
-
 
 ## How it works ⚙️
 
