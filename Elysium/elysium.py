@@ -1,13 +1,11 @@
 from oceandb.utils.embedding_functions import ImageBindEmbeddingFunction
-
 import concurrent.futures
 import os
 import youtube_dl
 from pytube import YouTube
 from tempfile import TemporaryDirectory
-from typing import List, Union
+from typing import List 
 from PIL import Image
-import torch
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 from torchvision import transforms
 from ImageBind.models.multimodal_preprocessors import (
@@ -29,9 +27,11 @@ class Elysium:
     def get_embedding(self, file_path: str) -> List[float]:
         if self.file_type == 'image':
             img = Image.open(file_path)
-            return self.vision_embedding_function.embed_image(img)
+            return self.vision_embedding_function(img)
         elif self.file_type == 'audio':
-            return self.audio_embedding_function.embed_file(file_path)
+            return self.audio_embedding_function(file_path)
+        elif self.file_type == "video":
+            return self.vision_embedding_function(load_and_transform_video_data)
     
     def download_youtube_video(self, url, target_dir):
         ydl_opts = {'outtmpl': os.path.join(target_dir, '%(id)s.%(ext)s')}
@@ -46,15 +46,15 @@ class Elysium:
 
     def load_and_transform_youtube_video(self, url, device, clip_duration=2, clips_per_video=5, sample_rate=16000):
         video_path = self.get_video_path(url)
-        return self.load_and_transform_video_data(
+        video_features = load_and_transform_video_data(
             [video_path],
             device,
             clip_duration,
             clips_per_video,
             sample_rate
         )
-
-
+        return video_features
+    
     def generate_embeddings(self):
         files = os.listdir(self.file_path)
         embeddings = []
