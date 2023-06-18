@@ -19,7 +19,7 @@ Welcome to the **Elysium Knowledge Repository**! Utilizing the principles of the
 Install all necessary libraries with the following pip commands:
 
 ```sh
-pip install numpy pandas pyarrow nomic tenacity python-dotenv concurrent
+pip elysium-knowledge-repository
 ```
 
 ### Usage
