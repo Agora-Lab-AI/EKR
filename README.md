@@ -77,11 +77,9 @@ Help spread the wisdom! Share the Elysium Knowledge Repository with your friends
 
  social media platforms:
 
-- [Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=<URL>)
-- [Share on Twitter](https://twitter.com/intent/tweet?text=Check%20out%20the%20Elysium%20Knowledge%20Repository:%20<URL>)
-- [Share on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=<URL>&title=Elysium%20Knowledge%20Repository)
-
-
+- [Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://github.com/Agora-X/EKR)
+- [Share on Twitter](https://twitter.com/intent/tweet?text=Check%20out%20the%20Elysium%20Knowledge%20Repository:%20https://github.com/Agora-X/EKR)
+- [Share on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Agora-X/EKR&title=Elysium%20Knowledge%20Repository)
 
 
 ## Contributing 🤝
@@ -137,3 +135,15 @@ There are challenges and constraints associated with each data source. They incl
 9. **Government Records (e.g., U.S. Census Bureau, European Union Open Data Portal)**: These sources offer a variety of data types, including text, numerical data, and sometimes images or audio. The challenge is that the data may come in many different formats and may require extensive cleaning and pre-processing.
 
 10. **Social Media Platforms (e.g., Facebook, Reddit)**: These platforms provide text, image, and sometimes video data. They can be used for sentiment analysis, event detection, and more. The obstacles include the platforms' API usage policies and privacy concerns.
+
+
+## Upcoming modality processing formats:
+
+* sensor data 
+* heat maps 
+* pdfs
+* csvs 
+* other document like embeddings
+* lidar
+* 3d
+* Any ideas? Submit a PR please!
