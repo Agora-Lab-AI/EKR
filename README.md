@@ -21,7 +21,7 @@ Welcome to the **Elysium Knowledge Repository**! Utilizing the principles of the
 Install all necessary libraries with the following pip commands:
 
 ```sh
-pip elysium-knowledge-repository
+pip install elysium-knowledge-repository
 ```
 
 ### Usage
