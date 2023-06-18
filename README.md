@@ -5,6 +5,8 @@ The Elysium Knowledge Repository or EKR is brought to you by Agora, we're an all
 
 # Elysium Knowledge Repository: Embedding the Wisdom of Humanity 🏛️
 
+![Elysium banner](elysium-knowledger-banner.png)
+
 Welcome to the **Elysium Knowledge Repository**! Utilizing the principles of the ancient Greeks, this advanced solution converts all of humanity's wisdom into multi-modal embeddings, preserved and stored in an efficient Parquet format.
 
 ## Features 🚀
@@ -79,7 +81,8 @@ Help spread the wisdom! Share the Elysium Knowledge Repository with your friends
 - [Share on Twitter](https://twitter.com/intent/tweet?text=Check%20out%20the%20Elysium%20Knowledge%20Repository:%20<URL>)
 - [Share on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=<URL>&title=Elysium%20Knowledge%20Repository)
 
-(Replace `<URL>` with the link to this GitHub repository)
+
+
 
 ## Contributing 🤝
 
